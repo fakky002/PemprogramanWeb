@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Hubungi Terungku Fakky melalui form, email, LinkedIn, atau GitHub.">
+  <title>Kontak | Portfolio Terungku Fakky</title>
+  <link rel="stylesheet" href="css/kontak.css">
+</head>
+<body>
+
+  <!-- ===== HEADER + NAVIGASI (Flexbox) ===== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-mark" aria-hidden="true">TF</span>
+        <span class="brand-text">
+          <strong>Terungku Fakky</strong>
+          <small>Frontend Developer</small>
+        </span>
+      </a>
+
+      <input type="checkbox" class="nav-toggle-input" id="nav-toggle"
+             aria-label="Buka atau tutup menu navigasi">
+      <nav class="site-nav" aria-label="Navigasi utama">
+        <label class="nav-toggle" for="nav-toggle">
+          <span class="nav-toggle-icon" aria-hidden="true"></span>
+          <span>Menu</span>
+        </label>
+        <ul class="nav-list">
+          <li><a href="index.html">Beranda</a></li>
+          <li><a href="tentang.html">Tentang</a></li>
+          <li><a href="keahlian.html">Keahlian</a></li>
+          <li><a href="proyek.html">Proyek</a></li>
+          <li><a href="pendidikan.html">Pendidikan</a></li>
+          <li><a href="kontak.html" aria-current="page">Kontak</a></li>
+        </ul>
+      </nav>
+
+      <a class="btn btn-outline nav-cta" href="#form-kontak">Isi Form</a>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ===== JUDUL HALAMAN ===== -->
+    <section class="page-head">
+      <div class="container">
+        <p class="eyebrow">Hubungi</p>
+        <h1>Mari <span class="text-primary">Terhubung</span></h1>
+        <p class="lead">
+          Punya tugas, mau berdiskusi, atau ingin menawarkan peluang kerja sama?
+          Silakan kirim pesan lewat form di bawah ini.
+        </p>
+      </div>
+    </section>
+
+    <!-- ===== FORM + INFORMASI (CSS Grid) ===== -->
+    <section class="section" id="form-kontak">
+      <div class="container contact-layout">
+
+        <aside class="contact-info" aria-label="Informasi kontak">
+          <h2 class="section-title">Informasi <span class="text-primary">Kontak</span></h2>
+          <span class="divider"></span>
+
+          <ul class="contact-list">
+            <li>
+              <span class="contact-icon" aria-hidden="true">@</span>
+              <div>
+                <strong>Email</strong>
+                <p>fakky@example.com</p>
+              </div>
+            </li>
+            <li>
+              <span class="contact-icon" aria-hidden="true">in</span>
+              <div>
+                <strong>LinkedIn</strong>
+                <p>linkedin.com/in/fakky</p>
+              </div>
+            </li>
+            <li>
+              <span class="contact-icon" aria-hidden="true">GH</span>
+              <div>
+                <strong>GitHub</strong>
+                <p>github.com/fakky</p>
+              </div>
+            </li>
+            <li>
+              <span class="contact-icon" aria-hidden="true">LOC</span>
+              <div>
+                <strong>Lokasi</strong>
+                <p>Banda Aceh, Aceh, Indonesia</p>
+              </div>
+            </li>
+            <li>
+              <span class="contact-icon" aria-hidden="true">JAM</span>
+              <div>
+                <strong>Waktu Respons</strong>
+                <p>Biasanya 1x24 jam</p>
+              </div>
+            </li>
+          </ul>
+
+          <div class="info-note">
+            <h3>Catatan</h3>
+            <p>
+              Form pada halaman ini bersifat demo dan belum terhubung ke server.
+              Silakan kirim pesan langsung melalui email agar cepat saya baca.
+            </p>
+          </div>
+        </aside>
+
+        <form class="contact-form" action="#" method="post">
+          <h2 class="form-title">Kirim Pesan</h2>
+
+          <div class="form-row">
+            <label class="form-field">
+              <span>Nama Lengkap</span>
+              <input type="text" name="nama" placeholder="Nama Anda" autocomplete="name" required>
+            </label>
+            <label class="form-field">
+              <span>Email</span>
+              <input type="email" name="email" placeholder="email@domain.com" autocomplete="email" required>
+            </label>
+          </div>
+
+          <label class="form-field">
+            <span>Subjek</span>
+            <select name="subjek">
+              <option value="magang">Kesempatan magang</option>
+              <option value="freelance">Permintaan freelance</option>
+              <option value="diskusi">Diskusi belajar</option>
+              <option value="lainnya">Lainnya</option>
+            </select>
+          </label>
+
+          <label class="form-field">
+            <span>Pesan</span>
+            <textarea name="pesan" rows="6" placeholder="Tulis pesan Anda di sini" required></textarea>
+          </label>
+
+          <label class="check-field">
+            <input type="checkbox" name="setuju" required>
+            <span>Saya setuju bahwa data ini boleh digunakan untuk membalas pesan saya.</span>
+          </label>
+
+          <button class="btn btn-primary btn-block" type="submit">Kirim Pesan</button>
+        </form>
+
+      </div>
+    </section>
+
+    <!-- ===== PERTANYAAN UMUM (Accordion HTML native) ===== -->
+    <section class="section section-alt">
+      <div class="container faq-container">
+        <div class="section-head center">
+          <h2 class="section-title">Pertanyaan <span class="text-primary">Umum</span></h2>
+          <span class="divider"></span>
+        </div>
+
+        <details class="faq-item">
+          <summary>Apakah saya bisa dipercaya untuk mengerjakan proyek?</summary>
+          <p>
+            Saya selalu mengerjakan proyek secara mandiri dari awal sampai akhir.
+            Untuk proyek freelance saya menyediakan contoh halaman yang
+            sudah selesai agar klien bisa melihat hasilannya.
+          </p>
+        </details>
+
+        <details class="faq-item">
+          <summary>Teknologi apa saja yang saya kuasai?</summary>
+          <p>
+            Fokus saya adalah HTML5 semantik, CSS3 modern (Flexbox, Grid, custom
+            properties, dan media query), serta JavaScript dasar. Daftar lengkapnya
+            ada di halaman Keahlian.
+          </p>
+        </details>
+
+        <details class="faq-item">
+          <summary>Apakah tersedia untuk magang part-time?</summary>
+          <p>
+            Ya, saya tersedia untuk magang part-time pada hari-hari kerja setelah
+            jam kuliah, maupun untuk proyek jangka pendek.
+          </p>
+        </details>
+
+        <details class="faq-item">
+          <summary>Berapa lama pengerjaan satu halaman?</summary>
+          <p>
+            Untuk satu halaman statis sederhana biasanya 3–5 hari kerja, tergantung
+            banyaknya section, ketersediaan konten, dan tingkat responsif yang diminta.
+          </p>
+        </details>
+
+        <details class="faq-item">
+          <summary>Halaman ini dibuat dengan teknologi apa?</summary>
+          <p>
+            Dibangun dengan HTML semantik, CSS eksternal, dan Flexbox serta CSS Grid
+            untuk layout. Seluruh gaya ditulis di file .css terpisah tanpa style inline.
+          </p>
+        </details>
+
+      </div>
+    </section>
+
+    <!-- ===== CTA ===== -->
+    <section class="section">
+      <div class="container">
+        <div class="cta-band">
+          <div class="cta-text">
+            <h2>Lebih mudah kirim email langsung?</h2>
+            <p>Tidak masalah, kirim email dan saya akan membalas secepatnya.</p>
+          </div>
+          <a class="btn btn-primary" href="mailto:fakky@example.com">Kirim Email</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER (Flexbox) ===== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <strong>Terungku Fakky</strong>
+        <p>Dibangun dengan HTML semantik, Flexbox, dan CSS Grid.</p>
+      </div>
+      <nav class="footer-nav" aria-label="Navigasi footer">
+        <a href="tentang.html">Tentang</a>
+        <a href="keahlian.html">Keahlian</a>
+        <a href="proyek.html">Proyek</a>
+        <a href="pendidikan.html">Pendidikan</a>
+        <a href="kontak.html">Kontak</a>
+      </nav>
+      <p class="footer-copy">&copy; 2026 Terungku Fakky. Seluruh hak cipta dilindungi.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Ilustrasi avatar Terungku Fakky">
+  <defs>
+    <linearGradient id="avatarGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2563eb"/>
+      <stop offset="100%" stop-color="#f59e0b"/>
+    </linearGradient>
+  </defs>
+  <circle cx="100" cy="100" r="100" fill="url(#avatarGrad)"/>
+  <circle cx="100" cy="82" r="34" fill="#ffffff"/>
+  <path d="M40 170c0-33 27-54 60-54s60 21 60 54z" fill="#ffffff"/>
+</svg>

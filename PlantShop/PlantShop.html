@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <link rel="stylesheet" href="css/PlantShop.css">
+</head>
+<body>
+<!-- Plant Shop — a game about growing and selling plants.
+
+     Third-party modules load from esm.sh via the import map below, so the
+     JS pane holds only the game itself. Drag to orbit, scroll to zoom,
+     click a pot to plant, water, or sell. Space pauses; 1/2/3 set speed. -->
+
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@19.2.8",
+    "react/jsx-runtime": "https://esm.sh/react@19.2.8/jsx-runtime",
+    "react-dom": "https://esm.sh/react-dom@19.2.8?external=react",
+    "react-dom/client": "https://esm.sh/react-dom@19.2.8/client?external=react",
+    "three": "https://esm.sh/three@0.185.1",
+    "three/examples/jsm/controls/OrbitControls.js": "https://esm.sh/three@0.185.1/examples/jsm/controls/OrbitControls.js?external=three",
+    "@react-three/fiber": "https://esm.sh/@react-three/fiber@9.7.0?external=react,react-dom,three",
+    "zustand": "https://esm.sh/zustand@5.0.14?external=react"
+  }
+}
+</script>
+
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+<div id="root"></div>
+
+<script type="text/babel" data-type="module" src="js/PlantShop.js"></script>
+</body>
+</html>

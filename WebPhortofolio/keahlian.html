@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Daftar keahlian Terungku Fakky: HTML5, CSS3, JavaScript, dan berbagai alat pendukung.">
+  <title>Keahlian | Portfolio Terungku Fakky</title>
+  <link rel="stylesheet" href="css/keahlian.css">
+</head>
+<body>
+
+  <!-- ===== HEADER + NAVIGASI (Flexbox) ===== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-mark" aria-hidden="true">TF</span>
+        <span class="brand-text">
+          <strong>Terungku Fakky</strong>
+          <small>Frontend Developer</small>
+        </span>
+      </a>
+
+      <input type="checkbox" class="nav-toggle-input" id="nav-toggle"
+             aria-label="Buka atau tutup menu navigasi">
+      <nav class="site-nav" aria-label="Navigasi utama">
+        <label class="nav-toggle" for="nav-toggle">
+          <span class="nav-toggle-icon" aria-hidden="true"></span>
+          <span>Menu</span>
+        </label>
+        <ul class="nav-list">
+          <li><a href="index.html">Beranda</a></li>
+          <li><a href="tentang.html">Tentang</a></li>
+          <li><a href="keahlian.html" aria-current="page">Keahlian</a></li>
+          <li><a href="proyek.html">Proyek</a></li>
+          <li><a href="pendidikan.html">Pendidikan</a></li>
+          <li><a href="kontak.html">Kontak</a></li>
+        </ul>
+      </nav>
+
+      <a class="btn btn-outline nav-cta" href="kontak.html">Hubungi Saya</a>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ===== JUDUL HALAMAN ===== -->
+    <section class="page-head">
+      <div class="container">
+        <p class="eyebrow">Kemampuan</p>
+        <h1>Keahlian <span class="text-primary">Saya</span></h1>
+        <p class="lead">
+          Kemampuan teknis yang saya kuasai beserta alat bantu yang saya pakai
+          sehari-hari untuk menyelesaikan sebuah tugas web.
+        </p>
+      </div>
+    </section>
+
+    <!-- ===== KELOMPOK KEAHLIAN 1: BAHASA (CSS Grid) ===== -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head center">
+          <h2 class="section-title">Bahasa &amp; <span class="text-primary">Teknologi</span></h2>
+          <span class="divider"></span>
+        </div>
+
+        <ul class="skill-list">
+
+          <li class="skill-item">
+            <div class="skill-head">
+              <h3>HTML5 Semantik</h3>
+              <span class="level-label">90%</span>
+            </div>
+            <div class="level-bar">
+              <span class="level-fill lvl-90"></span>
+            </div>
+            <p>Tag semantik seperti header, nav, main, section, article, aside, figure, dan footer. Termasuk praktik terbaik aksesibilitas.</p>
+            <ul class="tag-list">
+              <li>Semantik</li><li>Form</li><li>SEO dasar</li><li>Aksesibilitas</li>
+            </ul>
+          </li>
+
+          <li class="skill-item">
+            <div class="skill-head">
+              <h3>CSS3 Modern</h3>
+              <span class="level-label">85%</span>
+            </div>
+            <div class="level-bar">
+              <span class="level-fill lvl-85"></span>
+            </div>
+            <p>Flexbox, CSS Grid, custom properties, posisi, dan media query untuk membangun layout yang responsif.</p>
+            <ul class="tag-list">
+              <li>Flexbox</li><li>Grid</li><li>Variabel CSS</li><li>Media query</li>
+            </ul>
+          </li>
+
+          <li class="skill-item">
+            <div class="skill-head">
+              <h3>JavaScript Dasar</h3>
+              <span class="level-label">70%</span>
+            </div>
+            <div class="level-bar">
+              <span class="level-fill lvl-70"></span>
+            </div>
+            <p>Manipulasi DOM, event handler, validasi form, toggle kelas, dan pengenalan pola data pada array serta object.</p>
+            <ul class="tag-list">
+              <li>DOM</li><li>Event</li><li>Validasi form</li>
+            </ul>
+          </li>
+
+          <li class="skill-item">
+            <div class="skill-head">
+              <h3>Responsif Design</h3>
+              <span class="level-label">80%</span>
+            </div>
+            <div class="level-bar">
+              <span class="level-fill lvl-80"></span>
+            </div>
+            <p>Merancang dari layar kecil ke besar, memastikan tidak ada scroll horizontal di HP, tablet, maupun desktop.</p>
+            <ul class="tag-list">
+              <li>Mobile-first</li><li>Fluid layout</li><li>clamp()</li>
+            </ul>
+          </li>
+
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===== ALAT KERJA & SOFT SKILL (Flexbox) ===== -->
+    <section class="section section-alt">
+      <div class="container">
+        <div class="section-head center">
+          <h2 class="section-title">Alat Kerja &amp; <span class="text-primary">Soft Skill</span></h2>
+          <span class="divider"></span>
+        </div>
+
+        <ul class="tool-grid">
+          <li class="tool-card"><span class="tool-icon" aria-hidden="true">&lt;/&gt;</span><h3>Visual Studio Code</h3><p>Editor utama untuk menulis HTML, CSS, dan JavaScript.</p></li>
+          <li class="tool-card"><span class="tool-icon" aria-hidden="true">GH</span><h3>Git &amp; GitHub</h3><p>Version control: commit rutin, branch, dan collaborate.</p></li>
+          <li class="tool-card"><span class="tool-icon" aria-hidden="true">FI</span><h3>Figma</h3><p>Merancang wireframe dan menerjemahkannya ke HTML/CSS.</p></li>
+          <li class="tool-card"><span class="tool-icon" aria-hidden="true">BR</span><h3>Chrome DevTools</h3><p>Memeriksa layout,responsive, dan masalah aksesibilitas.</p></li>
+          <li class="tool-card"><span class="tool-icon" aria-hidden="true">PR</span><h3>Problem Solving</h3><p>Memecah masalah layout dan debugging secara sistematis.</p></li>
+          <li class="tool-card"><span class="tool-icon" aria-hidden="true">TM</span><h3>Time Management</h3><p>Menjadwalkan pengerjaan tugas agar tepat waktu.</p></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===== SEDANG DIPELAJARI ===== -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head center">
+          <h2 class="section-title">Sedang <span class="text-primary">Dipelajari</span></h2>
+          <span class="divider"></span>
+        </div>
+
+        <div class="learning-grid">
+          <article class="learning-card">
+            <h3>CSS Framework</h3>
+            <p>Mempelajari penggunaan Tailwind CSS dan Bootstrap untuk mempercepat developing.</p>
+          </article>
+          <article class="learning-card">
+            <h3>JavaScript Lanjutan</h3>
+            <p>Memahami asynchronous, fetch dari API, dan penggunaan modul ES6+.</p>
+          </article>
+          <article class="learning-card">
+            <h3>Basic React</h3>
+            <p>Membangun komponen reusable dan memahami konsep state dalam React.</p>
+          </article>
+        </div>
+
+        <p class="section-more">
+          <a class="link-arrow" href="proyek.html">Lihat penerapannya dalam proyek &rarr;</a>
+        </p>
+      </div>
+    </section>
+
+    <!-- ===== CTA ===== -->
+    <section class="section">
+      <div class="container">
+        <div class="cta-band">
+          <div class="cta-text">
+            <h2>Butuh bantuan pengerjaan web?</h2>
+            <p>Saya siap membantu halaman yang rapi, cepat, dan responsif.</p>
+          </div>
+          <a class="btn btn-primary" href="kontak.html">Hubungi Saya</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER (Flexbox) ===== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <strong>Terungku Fakky</strong>
+        <p>Dibangun dengan HTML semantik, Flexbox, dan CSS Grid.</p>
+      </div>
+      <nav class="footer-nav" aria-label="Navigasi footer">
+        <a href="tentang.html">Tentang</a>
+        <a href="keahlian.html">Keahlian</a>
+        <a href="proyek.html">Proyek</a>
+        <a href="pendidikan.html">Pendidikan</a>
+        <a href="kontak.html">Kontak</a>
+      </nav>
+      <p class="footer-copy">&copy; 2026 Terungku Fakky. Seluruh hak cipta dilindungi.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

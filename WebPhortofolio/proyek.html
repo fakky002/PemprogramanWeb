@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Kumpulan proyek web Terungku Fakky: landing page, dashboard, katalog produk, dan website sekolah.">
+  <title>Proyek | Portfolio Terungku Fakky</title>
+  <link rel="stylesheet" href="css/proyek.css">
+</head>
+<body>
+
+  <!-- ===== HEADER + NAVIGASI (Flexbox) ===== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-mark" aria-hidden="true">TF</span>
+        <span class="brand-text">
+          <strong>Terungku Fakky</strong>
+          <small>Frontend Developer</small>
+        </span>
+      </a>
+
+      <input type="checkbox" class="nav-toggle-input" id="nav-toggle"
+             aria-label="Buka atau tutup menu navigasi">
+      <nav class="site-nav" aria-label="Navigasi utama">
+        <label class="nav-toggle" for="nav-toggle">
+          <span class="nav-toggle-icon" aria-hidden="true"></span>
+          <span>Menu</span>
+        </label>
+        <ul class="nav-list">
+          <li><a href="index.html">Beranda</a></li>
+          <li><a href="tentang.html">Tentang</a></li>
+          <li><a href="keahlian.html">Keahlian</a></li>
+          <li><a href="proyek.html" aria-current="page">Proyek</a></li>
+          <li><a href="pendidikan.html">Pendidikan</a></li>
+          <li><a href="kontak.html">Kontak</a></li>
+        </ul>
+      </nav>
+
+      <a class="btn btn-outline nav-cta" href="kontak.html">Hubungi Saya</a>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ===== JUDUL HALAMAN ===== -->
+    <section class="page-head">
+      <div class="container">
+        <p class="eyebrow">Karya</p>
+        <h1>Proyek <span class="text-primary">Saya</span></h1>
+        <p class="lead">
+          Beberapa halaman web yang saya kerjakan sendiri maupun sebagai tugas kuliah.
+          Semuanya dibuat tanpa framework, hanya memakai HTML, CSS, dan JavaScript.
+        </p>
+      </div>
+    </section>
+
+    <!-- ===== PROYEK UTAMA (CSS Grid 2 kolom) ===== -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="section-title">Proyek <span class="text-primary">Utama</span></h2>
+          <span class="divider"></span>
+        </div>
+
+        <article class="featured">
+          <figure class="featured-art">
+            <img class="featured-svg" src="img/project-umkm.svg" alt="" width="600" height="340">
+          </figure>
+
+          <div class="featured-body">
+            <p class="featured-badge">Proyek Terbesar</p>
+            <h3>Website Profil UMKM Oliveira</h3>
+            <p>
+              Halaman profil lengkap untuk usaha pulsa dan aksesori lokal. Berisi
+              section profil, layanan, harga, galeri, dan form pemesanan yang
+              tervalidasi di sisi klien.
+            </p>
+            <dl class="mini-facts">
+              <div><dt>Peran</dt><dd>Frontend Developer</dd></div>
+              <div><dt>Durasi</dt><dd>3 Minggu</dd></div>
+              <div><dt>Status</dt><dd>Selesai &amp; Dipakai</dd></div>
+            </dl>
+            <ul class="tag-list">
+              <li>HTML</li><li>CSS Grid</li><li>JavaScript</li><li>Form</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ===== SEMUA PROYEK (CSS Grid auto-fit + minmax) ===== -->
+    <section class="section section-alt">
+      <div class="container">
+        <div class="section-head center">
+          <h2 class="section-title">Semua <span class="text-primary">Proyek</span></h2>
+          <span class="divider"></span>
+        </div>
+
+        <div class="project-grid">
+
+          <article class="project-card">
+            <figure class="project-thumb thumb-a">
+              <img class="thumb-art" src="img/project-portofolio.svg" alt="" width="400" height="220">
+            </figure>
+            <div class="project-body">
+              <p class="project-type">Website Pribadi</p>
+              <h3>Web Portofolio Responsif</h3>
+              <p>Portofolio pribadi dengan Flexbox, CSS Grid, dan tiga breakpoint media query.</p>
+              <ul class="tag-list"><li>HTML</li><li>CSS</li><li>Responsif</li></ul>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <figure class="project-thumb thumb-b">
+              <img class="thumb-art" src="img/project-landing.svg" alt="" width="400" height="220">
+            </figure>
+            <div class="project-body">
+              <p class="project-type">Landing Page</p>
+              <h3>Landing Page UMKM</h3>
+              <p>Halaman promosi usaha kecil dengan desain bersih dan tombol aksi yang jelas.</p>
+              <ul class="tag-list"><li>HTML</li><li>CSS Grid</li></ul>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <figure class="project-thumb thumb-c">
+              <img class="thumb-art" src="img/project-dashboard.svg" alt="" width="400" height="220">
+            </figure>
+            <div class="project-body">
+              <p class="project-type">Prototype</p>
+              <h3>Dashboard Admin</h3>
+              <p>Prototype dashboard dengan layout grid area dan tabel data sederhana.</p>
+              <ul class="tag-list"><li>CSS Grid</li><li>JavaScript</li></ul>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <figure class="project-thumb thumb-d">
+              <img class="thumb-art" src="img/project-katalog.svg" alt="" width="400" height="220">
+            </figure>
+            <div class="project-body">
+              <p class="project-type">Tugas Kuliah</p>
+              <h3>Katalog Produk Sederhana</h3>
+              <p>Daftar produk dengan filter kategori memakai Flexbox dan state JavaScript.</p>
+              <ul class="tag-list"><li>HTML</li><li>Flexbox</li></ul>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <figure class="project-thumb thumb-a">
+              <img class="thumb-art" src="img/project-sekolah.svg" alt="" width="400" height="220">
+            </figure>
+            <div class="project-body">
+              <p class="project-type">Tugas Kuliah</p>
+              <h3>Website Sekolah</h3>
+              <p>Profil sekolah lengkap: visi misi, fasilitas, guru, serta prestasi siswa.</p>
+              <ul class="tag-list"><li>HTML</li><li>CSS</li><li>Form</li></ul>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <figure class="project-thumb thumb-c">
+              <img class="thumb-art" src="img/project-todo.svg" alt="" width="400" height="220">
+            </figure>
+            <div class="project-body">
+              <p class="project-type">Mandiri</p>
+              <h3>Aplikasi Todo List</h3>
+              <p>Catatan tugas harian dengan localStorage, fitur tambah, tandai selesai, dan hapus.</p>
+              <ul class="tag-list"><li>JavaScript</li><li>DOM</li><li>LocalStorage</li></ul>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CATATAN PROSES ===== -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head center">
+          <h2 class="section-title">Cara saya <span class="text-primary">Mengerjakan</span></h2>
+          <span class="divider"></span>
+        </div>
+
+        <ol class="step-grid">
+          <li class="step-item">
+            <span class="step-num" aria-hidden="true">1</span>
+            <h3>Analisis Kebutuhan</h3>
+            <p>Memahami tujuan situs, siapa target pembacanya, dan informasi apa yang perlu ditampilkan.</p>
+          </li>
+          <li class="step-item">
+            <span class="step-num" aria-hidden="true">2</span>
+            <h3>Buat Wireframe</h3>
+            <p>Merancang tata letak kasar dengan Figma agar struktur halaman disepakati lebih dulu.</p>
+          </li>
+          <li class="step-item">
+            <span class="step-num" aria-hidden="true">3</span>
+            <h3>Tulis Kode</h3>
+            <p>Menulis HTML semantik, lalu CSS dengan Flexbox atau Grid, lalu JavaScript seperlunya.</p>
+          </li>
+          <li class="step-item">
+            <span class="step-num" aria-hidden="true">4</span>
+            <h3>Uji Responsif</h3>
+            <p>Memeriksa tampilan di HP, tablet, dan desktop sampai tidak ada elemen yang meluber.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ===== CTA ===== -->
+    <section class="section">
+      <div class="container">
+        <div class="cta-band">
+          <div class="cta-text">
+            <h2>Punya proyek serupa?</h2>
+            <p>Ceritakan kebutuhan Anda, saya akan bantu dari awal sampai selesai.</p>
+          </div>
+          <a class="btn btn-primary" href="kontak.html">Hubungi Saya</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER (Flexbox) ===== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <strong>Terungku Fakky</strong>
+        <p>Dibangun dengan HTML semantik, Flexbox, dan CSS Grid.</p>
+      </div>
+      <nav class="footer-nav" aria-label="Navigasi footer">
+        <a href="tentang.html">Tentang</a>
+        <a href="keahlian.html">Keahlian</a>
+        <a href="proyek.html">Proyek</a>
+        <a href="pendidikan.html">Pendidikan</a>
+        <a href="kontak.html">Kontak</a>
+      </nav>
+      <p class="footer-copy">&copy; 2026 Terungku Fakky. Seluruh hak cipta dilindungi.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

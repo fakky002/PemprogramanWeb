@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Riwayat pendidikan, mata kuliah, sertifikasi, dan pengalaman Terungku Fakky.">
+  <title>Pendidikan | Portfolio Terungku Fakky</title>
+  <link rel="stylesheet" href="css/pendidikan.css">
+</head>
+<body>
+
+  <!-- ===== HEADER + NAVIGASI (Flexbox) ===== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-mark" aria-hidden="true">TF</span>
+        <span class="brand-text">
+          <strong>Terungku Fakky</strong>
+          <small>Frontend Developer</small>
+        </span>
+      </a>
+
+      <input type="checkbox" class="nav-toggle-input" id="nav-toggle"
+             aria-label="Buka atau tutup menu navigasi">
+      <nav class="site-nav" aria-label="Navigasi utama">
+        <label class="nav-toggle" for="nav-toggle">
+          <span class="nav-toggle-icon" aria-hidden="true"></span>
+          <span>Menu</span>
+        </label>
+        <ul class="nav-list">
+          <li><a href="index.html">Beranda</a></li>
+          <li><a href="tentang.html">Tentang</a></li>
+          <li><a href="keahlian.html">Keahlian</a></li>
+          <li><a href="proyek.html">Proyek</a></li>
+          <li><a href="pendidikan.html" aria-current="page">Pendidikan</a></li>
+          <li><a href="kontak.html">Kontak</a></li>
+        </ul>
+      </nav>
+
+      <a class="btn btn-outline nav-cta" href="kontak.html">Hubungi Saya</a>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ===== JUDUL HALAMAN ===== -->
+    <section class="page-head">
+      <div class="container">
+        <p class="eyebrow">Riwayat</p>
+        <h1>Pendidikan &amp; <span class="text-primary">Pengalaman</span></h1>
+        <p class="lead">
+          Jejak belajar saya dari sekolah menengah sampai Universitas, beserta
+          pelajaran yang saya dapat di setiap tahap.
+        </p>
+      </div>
+    </section>
+
+    <!-- ===== RIWAYAT (CSS Grid 3 kolom) ===== -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head center">
+          <h2 class="section-title">Riwayat <span class="text-primary">Pendidikan</span></h2>
+          <span class="divider"></span>
+        </div>
+
+        <div class="timeline-grid">
+
+          <article class="timeline-item timeline-kampus">
+            <span class="timeline-dot" aria-hidden="true"></span>
+            <p class="timeline-year">2024 — Sekarang</p>
+            <h3>Universitas Islam Negeri Ar-Raniry Banda Aceh</h3>
+            <p class="timeline-meta">S1 Teknologi Informasi · Semester 5</p>
+            <p>
+              Memperdalam pemrograman web, basis data, dan struktur data sebagai
+              bagian dari studi Teknologi Informasi.
+            </p>
+          </article>
+
+          <article class="timeline-item timeline-pelatihan">
+            <span class="timeline-dot" aria-hidden="true"></span>
+            <p class="timeline-year">2025</p>
+            <h3>Pelatihan Web Design &amp; Sertifikasi Junior Web Developer</h3>
+            <p class="timeline-meta">Pelatihan bersertifikat · Junior Web Developer</p>
+            <p>
+              Mengikuti pelatihan web design dan menempuh sertifikasi sebagai
+              Junior Web Developer.
+            </p>
+          </article>
+
+          <article class="timeline-item timeline-smk">
+            <span class="timeline-dot" aria-hidden="true"></span>
+            <p class="timeline-year">2021 — 2024</p>
+            <h3>SMK Dharma Bahari Surabaya</h3>
+            <p class="timeline-meta">Teknik Komputer dan Jaringan (TKJ)</p>
+            <p>
+              Mempelajari jaringan, sistem operasi, dan dasar-dasar pemrograman.
+              Di sinilah ketertarikan pada dunia teknologi dimulai.
+            </p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== MATA KULIAH (Tabel responsif) ===== -->
+    <section class="section section-alt">
+      <div class="container">
+        <div class="section-head center">
+          <h2 class="section-title">Mata Kuliah <span class="text-primary">Relevan</span></h2>
+          <span class="divider"></span>
+        </div>
+
+        <div class="table-wrap">
+          <table class="course-table">
+            <caption class="sr-only">Daftar mata kuliah yang mendukung specialize pada pemrograman web</caption>
+            <thead>
+              <tr>
+                <th scope="col">Mata Kuliah</th>
+                <th scope="col">Bidang</th>
+                <th scope="col">Relevansi</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Pemrograman Web</th>
+                <td>Pengembangan Aplikasi</td>
+                <td>Dasar utama minat saya pada front-end development.</td>
+              </tr>
+              <tr>
+                <th scope="row">Basis Data</th>
+                <td>Data</td>
+                <td>Menjelaskan cara menyimpan serta mengambil data.</td>
+              </tr>
+              <tr>
+                <th scope="row">Struktur Data</th>
+                <td>Logika Pemrograman</td>
+                <td>Melatih logika berpikir saat menyelesaikan masalah.</td>
+              </tr>
+              <tr>
+                <th scope="row">Jaringan Komputer</th>
+                <td>Jaringan</td>
+                <td>Bekal dari masa SMK TKJ yang tetap saya manfaatkan.</td>
+              </tr>
+              <tr>
+                <th scope="row">Sistem Operasi</th>
+                <td>Infrastruktur</td>
+                <td>Memahami lingkungan kerja dan perangkat keras.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SERTIFIKAT & PENGHARGAAN (Flexbox) ===== -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head center">
+          <h2 class="section-title">Pelatihan &amp; <span class="text-primary">Sertifikasi</span></h2>
+          <span class="divider"></span>
+        </div>
+
+        <ul class="cert-grid">
+          <li class="cert-card">
+            <span class="cert-icon" aria-hidden="true">1</span>
+            <div class="cert-body">
+              <h3>Pelatihan Web Design dan Sertifikasi Junior Web Developer</h3>
+              <p class="cert-meta">Pelatihan Bersertifikat · 2025</p>
+              <p>
+                Mengikuti pelatihan web design dan menempuh sertifikasi sebagai
+                Junior Web Developer.
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===== CTA ===== -->
+    <section class="section">
+      <div class="container">
+        <div class="cta-band">
+          <div class="cta-text">
+            <h2>Tertarik bekerja sama?</h2>
+            <p>Saya sedang mencari kesempatan magang atau freelance di bidang web development.</p>
+          </div>
+          <a class="btn btn-primary" href="kontak.html">Hubungi Saya</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER (Flexbox) ===== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <strong>Terungku Fakky</strong>
+        <p>Dibangun dengan HTML semantik, Flexbox, dan CSS Grid.</p>
+      </div>
+      <nav class="footer-nav" aria-label="Navigasi footer">
+        <a href="tentang.html">Tentang</a>
+        <a href="keahlian.html">Keahlian</a>
+        <a href="proyek.html">Proyek</a>
+        <a href="pendidikan.html">Pendidikan</a>
+        <a href="kontak.html">Kontak</a>
+      </nav>
+      <p class="footer-copy">&copy; 2026 Terungku Fakky. Seluruh hak cipta dilindungi.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
